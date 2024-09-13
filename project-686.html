@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html>
-<style>
-    body {
-        background-color: black;
-        color: white;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-</style>
-   <head>
-      <title>This Project</title>
-   </head>
-   <body>
-      <h1>Project Details</h1>
-      <p>More diagrams and details</p>
-   </body>
+    <head>
+        <title>Beats Per Minute Adder for Songs</title>
+        <style>
+            body {
+                background-color: #000; /* black background */
+                font-family: 'Montserrat', sans-serif; /* non-standard font */
+                color: #fff; /* white text */
+            }
+            .title {
+                font-size: 48px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-left: 240px; /* reduced margin to 240px */
+            }
+            .image {
+                margin: 20px;
+                width: calc(33.33% - 40px);
+            }
+            .image:first-child {
+                width: 600px;
+                height: 400px;
+            }
+            .image:nth-child(2) {
+                width: 400px;
+                height: 120px;
+            }
+            .image:nth-child(3) {
+                width: 800px;
+                height: 600px;
+            }
+            .text {
+                max-width: 700px;
+                margin: 40px;
+                text-align: center;
+            }
+            .table-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px 20px;
+                padding: 40px;
+                width: 100%;
+                margin: 40px auto;
+                text-align: center;
+                justify-content: center;
+            }
+            .image-container {
+                margin-left: 40px; /* adjust the margin to accommodate the text */
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">Beats Per Minute Adder for Songs</h1>
+        <div class="table-container">
+            <div class="text">
+                <p>This python project is a beats per minute adder that takes a folder as input and lets the user tap out the beat to several songs in succession, only needing 7-15 seconds of input for each song. After it has determined it knows the beat, it moves onto the next song.<br><br><br>Link</p>
+				<p><a href="https://github.com/ApparentCafe/BPM-Adder" style="color: #FFFFFF">Github BPM-Adder Repository</a></p>
+            </div>
+        </div>
+    </body>
 </html>
