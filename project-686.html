@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
 <html>
     <head>
         <title>Beats Per Minute Adder for Songs</title>
@@ -61,6 +62,18 @@
             <div class="text">
                 <p>This python project is a beats per minute adder that takes a folder as input and lets the user tap out the beat to several songs in succession, only needing 7-15 seconds of input for each song. After it has determined it knows the beat, it moves onto the next song.<br><br><br>Link</p>
 				<p><a href="https://github.com/ApparentCafe/BPM-Adder" style="color: #FFFFFF">Github BPM-Adder Repository</a></p>
+				<br><br><br>
+				The first backbone function is <b>estimate_bpm_simple</b> and provides a simple benchmark estimate for the BPM of a song from the input taps.
+				<br><br>The second backbone function is <b>estimate_bpm_complex</b>.
+				<p>It uses a maximum likelihood estimator for sections of consistent taps to the beat.</p>
+<p>Given a set of <em>n</em> taps <em>t<sub>i</sub></em> for <em>i</em> from 1 to <em>n</em>, an unbiased estimate <span>&#x3BC;&#x302;</span> (μ̂) of the time between taps is:</p>
+
+<p>
+  \[
+  \hat{\mu} = \frac{\sum_{i=1}^{n-1} (t_{i+1} - t_i)}{n - 1}
+  \]
+</p>
+
             </div>
         </div>
     </body>
